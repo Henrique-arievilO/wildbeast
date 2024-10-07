@@ -89,6 +89,10 @@
         grid-template-columns: auto;
     }
 
+    .cardInfo {
+        justify-content: center;
+    }
+
     .ads {
         grid-template-columns: auto;
     }

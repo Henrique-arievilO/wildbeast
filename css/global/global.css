@@ -93,6 +93,12 @@ img {
     font-style: italic;
 }
 
+.taxonomy {
+    width: 50%;
+    line-height: .75 !important;
+    margin-bottom: 20px;
+}
+
 .col-expd {
     grid-column: 1 / -1;
 }
@@ -104,7 +110,7 @@ img {
 }
 
 .highlight {
-    max-width: 16rem;
+    max-width: 24rem;
 }
 
 img[src="./assets/animals/wildbeast2.png"] {
@@ -160,10 +166,12 @@ img[src="./assets/animals/wildbeast2.png"] {
     margin: 0 auto;
 }
 
-.classification li+li {
-    margin-top: 20px;
-    border-top: 2px solid var(--color01);
+.classification li {
     padding: 20px;
+}
+
+.classification li+li {
+    border-top: 2px solid var(--color01);
 }
 
 .quote p {
