@@ -1,4 +1,5 @@
 @import url(./global/global.css);
 @import url(./global/reset.css);
+@import url(./global/responsive.css);
 @import url(./utilities/color.css);
 @import url(./utilities/typography.css);

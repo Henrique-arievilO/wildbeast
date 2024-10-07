@@ -46,3 +46,9 @@
 .font-3-l {
     font: 400 1.25rem/1 'Courier New', sans-serif;
 }
+
+@media (max-width: 760px) {
+    .font-2-l {
+        font: 400 1.25rem/1 'Cormorant Upright', serif;
+    }
+}
