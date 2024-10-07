@@ -1,0 +1,67 @@
+:root {
+    --color00: #FFFFFF;
+    --color01: #FAFBFC80;
+    --color02: #C3C3C3;
+    --color03: #414141;
+    --color04: #090909;
+    --color05: #000000;
+    --primaryColor01: #6316D6;
+    --primaryColor02: #7A57AE;
+    --primaryColor03: #B07DFB;
+    --primaryColor04: #C4A0F8;
+    --secondaryColor01: #4AFF0B;
+    --secondaryColor02: #FF9315;
+    --gradient: linear-gradient(45deg, #6316D6, #B07DFB);
+}
+
+.color00 {
+    color: var(--color00);
+}
+
+.color01 {
+    color: var(--color01);
+}
+
+.color02 {
+    color: var(--color02);
+}
+
+.color03 {
+    color: var(--color03);
+}
+
+.color04 {
+    color: var(--color04);
+}
+
+.color05 {
+    color: var(--color05);
+}
+
+.primaryColor01 {
+    color: var(--primaryColor01);
+}
+
+.primaryColor02 {
+    color: var(--primaryColor02);
+}
+
+.primaryColor03 {
+    color: var(--primaryColor03);
+}
+
+.coloprimaryColor01r04 {
+    color: var(--primaryColor04);
+}
+
+.secondaryColor01 {
+    color: var(--secondaryColor01);
+}
+
+.secondaryColor02 {
+    color: var(--secondaryColor02);
+}
+
+.gradient {
+    color: var(--gradient);
+}
