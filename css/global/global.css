@@ -1,3 +1,199 @@
 * {
     font: 400 1rem/1.5 'Vollkorn', Georgia, serif;
 }
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+/* General Grid */
+.container {
+    display: grid;
+    grid-template-columns: minmax(160px, 1fr) 3fr 300px;
+    grid-template-areas:
+        "header header header"
+        "sidenav content ads"
+        "footer footer footer";
+    background: var(--color05);
+
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    background: var(--gradient);
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.header nav a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--color00);
+    border-radius: 5px;
+    background: #00000020;
+    transition: .3s;
+}
+
+.header nav a:hover {
+    background: #00000050;
+}
+
+/* Sidenav */
+.sidenav {
+    grid-area: sidenav;
+    background: var(--color03);
+    padding: 40px;
+}
+
+.sidenav li a {
+    display: block;
+    min-width: 60px;
+    max-width: 100px;
+    margin: 0 auto 20px;
+    background-color: var(--color05);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 12px 0 #ffffff10, 1px 1px 3px 0 #ffffff10;
+}
+
+.sidenav li a:hover {
+    background-color: var(--primaryColor04);
+    box-shadow: 4px 4px 12px 0 #000000, 2px 2px 6px 0 #000000;
+    transition: .3s;
+}
+
+/* Content */
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    color: var(--color01);
+}
+
+.title h1 {
+    font-style: italic;
+}
+
+.col-expd {
+    grid-column: 1 / -1;
+}
+
+.lin-expnd {
+    grid-row: span 2;
+    align-self: end;
+    width: 100%;
+}
+
+.highlight {
+    max-width: 16rem;
+}
+
+img[src="./assets/animals/wildbeast2.png"] {
+    align-self: end;
+}
+
+.info p+p {
+    margin-top: 40px;
+}
+
+/* Card Informações */
+.cardInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.cardInfo>div {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cardInfo span {
+    width: 80px;
+    text-align: center;
+    display: block;
+}
+
+.value {
+    background: var(--gradient);
+}
+
+.label {
+    background: var(--color00);
+    padding: 20px auto;
+    line-height: 2;
+}
+
+/* Blockquote e Classification*/
+
+.quote,
+.classification {
+    border-radius: 5px;
+    background: var(--gradient);
+    padding: 20px;
+    align-self: start;
+}
+
+.quote p {
+    font-style: italic;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.classification li+li {
+    margin-top: 20px;
+    border-top: 2px solid var(--color01);
+    padding: 20px;
+}
+
+.quote p {
+    text-align: center;
+}
+
+.quote span {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Advertisement */
+.ads {
+    grid-area: ads;
+    background: var(--color03);
+    padding: 40px;
+    display: grid;
+    align-content: start;
+    gap: 20px;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background: var(--gradient);
+    padding: 40px;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--primaryColor04);
+}
