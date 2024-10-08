@@ -113,7 +113,7 @@ img {
     max-width: 24rem;
 }
 
-img[src="./assets/animals/wildbeast2.png"] {
+.image2 {
     align-self: end;
 }
 
@@ -172,6 +172,10 @@ img[src="./assets/animals/wildbeast2.png"] {
 
 .classification li+li {
     border-top: 2px solid var(--color01);
+}
+
+.classification span {
+    font-weight: bold;
 }
 
 .quote p {
